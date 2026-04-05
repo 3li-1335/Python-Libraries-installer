@@ -2,9 +2,9 @@
 for /f "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do set ESC=%%b
 echo %ESC%[36mPython Libraries installer.%ESC%[0m
 echo.
-echo Last updated: 2026-03-31
+echo Last updated: 2026-04-06
 echo -----------------------------------------------------------
-echo numpy, pandas, matplotlib, spacy, nltk, textblob, langdetect, deep-translator, gensim, seaborn, scikit-learn, librosa, soundfile, jiwer, vosk, openai-whisper, librosa, soundfile
+echo numpy, pandas, matplotlib, spacy, nltk, textblob, langdetect, deep-translator, gensim, seaborn, scikit-learn, librosa, soundfile, jiwer, vosk, openai-whisper, librosa, soundfile, opencv-python
 echo (Also includes: spaCy English model 'en_core_web_sm')
 echo -----------------------------------------------------------
 echo.
@@ -25,7 +25,7 @@ if /i "%choice%"=="y" (
 :install
 echo.
 echo Installing required Python libraries...
-python -m pip install numpy pandas matplotlib spacy nltk textblob langdetect deep-translator gensim seaborn scikit-learn librosa soundfile jiwer vosk openai-whisper librosa soundfile
+python -m pip install numpy pandas matplotlib spacy nltk textblob langdetect deep-translator gensim seaborn scikit-learn librosa soundfile jiwer vosk openai-whisper librosa soundfile opencv-python
 
 echo.
 echo Downloading spaCy English model...
